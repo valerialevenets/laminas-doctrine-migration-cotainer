@@ -1,3 +1,7 @@
 <?php
 
-return [];
+return [
+    'factories' => [
+        \DoctrineMigrationDependencyInjector\DoctrineMigrationDependencyInjector::class => \DoctrineMigrationDependencyInjector\DoctrineMigrationDependencyInjectorFactory::class
+    ]
+];
