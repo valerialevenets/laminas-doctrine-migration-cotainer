@@ -1,0 +1,30 @@
+{
+  "name": "valerialevenets/laminas-doctrine-migration-cotainer",
+  "description": "Laminas Module that allows you inject container inside your migration class",
+  "type": "library",
+  "license": "MIT",
+  "keywords": [
+    "doctrine",
+    "migration",
+    "module",
+    "laminas"
+  ],
+  "authors": [
+    {
+      "name": "Valeriia Levenets",
+      "email": "valeria.levenets94@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "^7.4 || ^8.1",
+    "laminas/laminas-servicemanager": "~3.0",
+    "laminas/laminas-modulemanager": "~2.0",
+    "doctrine/doctrine-orm-module": "^4.0",
+    "doctrine/migrations": "^3.2"
+  },
+  "autoload": {
+    "psr-0": {
+      "DoctrineMigrationDependencyInjector": "src/"
+    }
+  }
+}
