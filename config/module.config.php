@@ -1,7 +1,10 @@
 <?php
 
 return [
-    'factories' => [
-        \DoctrineMigrationDependencyInjector\DoctrineMigrationDependencyInjector::class => \DoctrineMigrationDependencyInjector\DoctrineMigrationDependencyInjectorFactory::class
-    ]
+    'service_manager' => [
+        'factories' => [
+            \DoctrineMigrationDependencyInjector\DoctrineMigrationDependencyInjector::class => \DoctrineMigrationDependencyInjector\DoctrineMigrationDependencyInjectorFactory::class
+        ]
+    ],
+
 ];
