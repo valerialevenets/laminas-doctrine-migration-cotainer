@@ -1,7 +1,6 @@
 <?php
 
 namespace DoctrineMigrationDependencyInjector;
-
 use Interop\Container\ContainerInterface;
 
 interface ContainerAwareInterface

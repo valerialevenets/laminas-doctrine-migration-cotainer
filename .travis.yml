@@ -1,0 +1,17 @@
+language: php
+
+php:
+  - 8.0
+  - 7.4
+
+matrix:
+  allow_failures:
+    - php: nightly
+    - php: hhvm
+
+before_script:
+  - travis_retry composer self-update
+  - travis_retry composer update --no-interaction --prefer-source
+
+script:
+  - phpunit
