@@ -1,12 +1,10 @@
 <?php
 
 namespace DoctrineMigrationDependencyInjector;
-
 use Doctrine\Common\EventSubscriber;
 use Doctrine\Migrations\Event\MigrationsEventArgs;
 use Doctrine\Migrations\Events;
 use Doctrine\Migrations\Metadata\MigrationPlan;
-use Doctrine\Migrations\Version\Version;
 use Laminas\ServiceManager\ServiceManager;
 
 class DoctrineMigrationDependencyInjector implements EventSubscriber

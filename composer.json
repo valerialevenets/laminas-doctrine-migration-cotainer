@@ -22,9 +22,19 @@
     "doctrine/doctrine-orm-module": "^4.0",
     "doctrine/migrations": "^3.2"
   },
+  "require-dev": {
+    "laminas/laminas-test": "^4.0.x-dev",
+    "phpspec/prophecy-phpunit": "^2.0",
+    "phpunit/phpunit": "^9.0"
+  },
   "autoload": {
-    "psr-0": {
-      "DoctrineMigrationDependencyInjector": "src/"
+    "psr-4": {
+      "DoctrineMigrationDependencyInjector\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "DoctrineMigrationDependencyInjectorTest\\": "tests/"
     }
   }
 }

@@ -1,0 +1,13 @@
+version: '3.4'
+
+services:
+  web:
+    tty: true
+    environment:
+      - XDEBUG_MODE=coverage
+    build:
+      context: ./..
+      dockerfile: dev/Dockerfile
+    volumes:
+      - ./..:/var/www/laminas-doctrine-migration-container
+      - ./data/composer:/root/.composer
