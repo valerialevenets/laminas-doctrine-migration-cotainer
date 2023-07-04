@@ -15,6 +15,9 @@
       "email": "valeria.levenets94@gmail.com"
     }
   ],
+  "scripts": {
+    "test" : "php vendor/bin/phpunit"
+  },
   "require": {
     "php": "^7.4 || ^8.1",
     "laminas/laminas-servicemanager": "~3.0",
