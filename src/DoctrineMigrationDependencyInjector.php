@@ -5,13 +5,13 @@ use Doctrine\Common\EventSubscriber;
 use Doctrine\Migrations\Event\MigrationsEventArgs;
 use Doctrine\Migrations\Events;
 use Doctrine\Migrations\Metadata\MigrationPlan;
-use Laminas\ServiceManager\ServiceManager;
+use Interop\Container\Containerinterface;
 
 class DoctrineMigrationDependencyInjector implements EventSubscriber
 {
-    private ServiceManager $serviceManager;
+    private ContainerInterface $serviceManager;
 
-    public function __construct(ServiceManager $serviceManager)
+    public function __construct(ContainerInterface $serviceManager)
     {
         $this->serviceManager = $serviceManager;
     }
