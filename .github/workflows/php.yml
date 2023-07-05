@@ -36,16 +36,19 @@ jobs:
     # Docs: https://getcomposer.org/doc/articles/scripts.md
 
     - name: Run test suite with Php 7.4
+      uses: php-actions/phpunit@v3
       with:
         php-version: '7.4'
       run: vendor/bin/phpunit
 
     - name: Run test suite with Php 8.0
+      uses: php-actions/phpunit@v3
       with:
         php-version: '8.0'
       run: vendor/bin/phpunit
 
     - name: Run test suite with Php 8.1
+      uses: php-actions/phpunit@v3
       with:
         php-version: '8.1'
       run: vendor/bin/phpunit
