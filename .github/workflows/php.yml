@@ -36,6 +36,4 @@ jobs:
     # Docs: https://getcomposer.org/doc/articles/scripts.md
 
     - name: Run test suite
-      with:
-        php-versions: '7.4'
       run: vendor/bin/phpunit
