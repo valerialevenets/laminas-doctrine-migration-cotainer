@@ -36,4 +36,8 @@ jobs:
     # Docs: https://getcomposer.org/doc/articles/scripts.md
 
     - name: Run test suite
-      run: vendor/bin/phpunit
+      uses: php-actions/phpunit@v3
+      with:
+        bootstrap: vendor/autoload.php
+        configuration: phpunit.xml.dist
+        php_version: "7.4"
